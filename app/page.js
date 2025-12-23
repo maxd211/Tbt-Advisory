@@ -90,7 +90,7 @@ export default function Home() {
                             <strong>TBT Consulting GmbH</strong><br />
                             Büchelgarten 37<br />
                             53225 Bonn<br />
-                            Email: <a href="mailto:tb@tb-advisory.com">tb@tb-advisory.com</a><br /><br />
+                            Email: <a href="mailto:tb@tbt-advisory.com">tb@tbt-advisory.com</a><br /><br />
                             Geschäftsführer: Thanh Binh Tran<br />
                             Amtsgericht Berlin-Charlottenburg: HRB 218611 B
                         </p>
