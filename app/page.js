@@ -26,8 +26,7 @@ export default function Home() {
                         <p className="about-text">
                             Ex Chief Commercial Officer at Project A, the VC and PE behind Trade Republic, Sennder, Quantum
                             Systems, Arx and 100+ other investments & €1B assets under management. In my role I ran due
-                            diligences, sparred founders and scaled our portfolio with the help of the operational teams. I was
-                            promoted from Director to VP after 4 mo. and to CCO after 8 mo.
+                            diligences, sparred founders and scaled our portfolio with the help of the operational teams.
                         </p>
                         <p className="about-text">
                             Prior I founded a music & blockchain SaaS with clients and investors incl. Payday (Label of Steve
