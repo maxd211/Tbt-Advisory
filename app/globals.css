@@ -498,6 +498,7 @@ main {
         color: #ffffff;
         background: none;
         -webkit-text-fill-color: #ffffff;
+        margin-top: 2.2em;
     }
 
     .hero-tagline {
