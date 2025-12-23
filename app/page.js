@@ -9,7 +9,7 @@ export default function Home() {
                     <div className="hero-content-new">
                         <div className="hero-left">
                             <h1 className="hero-headline-new">
-                                Commercial advisory &amp; execution.
+                                Commercial advisory and execution.
                             </h1>
                         </div>
                         <div className="hero-right">
