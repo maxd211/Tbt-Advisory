@@ -86,7 +86,7 @@ export default function Home() {
                     <h1 className="page-title">Imprint</h1>
                     <div className="contact-info">
                         <p className="contact-text">
-                            <strong>TBT Consulting GmbH</strong><br />
+                            <strong>TBT Advisory GmbH</strong><br />
                             Büchelgarten 37<br />
                             53225 Bonn<br />
                             Email: <a href="mailto:tb@tbt-advisory.com">tb@tbt-advisory.com</a><br /><br />

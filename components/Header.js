@@ -17,7 +17,7 @@ export default function Header() {
     return (
         <header>
             <Link href="/" className="logo">
-                TBT <span>Consulting</span>
+                TBT <span>Advisory</span>
             </Link>
             <button
                 className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`}

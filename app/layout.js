@@ -2,7 +2,7 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata = {
-    title: 'TBT Consulting | Global Strategy',
+    title: 'TBT Advisory | Global Strategy',
     description: 'Commercial advisory & execution.',
 };
 
