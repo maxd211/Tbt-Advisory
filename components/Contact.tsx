@@ -24,7 +24,7 @@ export function Contact() {
 
         <Reveal delayMs={100}>
           <form
-            action="https://formspree.io/f/xojnrepy"
+            action="https://formspree.io/f/xojnrpey"
             method="POST"
             className="rounded-2xl border border-charcoal/10 bg-white p-7 shadow-soft"
             aria-label="Contact form"
