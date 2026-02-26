@@ -27,6 +27,11 @@ export const siteContent = {
       }
     ]
   },
+  highlights: [
+    "Ex Chief Commercial Officer at Project A (€1B AUM)",
+    "Built and scaled 20+ commercial strategies (0€ → 250M+€)",
+    "Logistics, defense, automotive, NGOs, insurance, banking, music",
+  ],
   services: {
     title: "Services",
     items: [
