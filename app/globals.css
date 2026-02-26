@@ -20,7 +20,7 @@ body {
 }
 
 .font-serif {
-  font-family: var(--font-playfair), ui-serif, Georgia, serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 ::selection {
