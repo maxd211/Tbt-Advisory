@@ -57,6 +57,27 @@ export const siteContent = {
       }
     ]
   },
+  process: {
+    title: "Process",
+    steps: [
+      {
+        title: "[[STEP_1_TITLE]]",
+        description: "[[STEP_1_DESCRIPTION]]"
+      },
+      {
+        title: "[[STEP_2_TITLE]]",
+        description: "[[STEP_2_DESCRIPTION]]"
+      },
+      {
+        title: "[[STEP_3_TITLE]]",
+        description: "[[STEP_3_DESCRIPTION]]"
+      },
+      {
+        title: "[[STEP_4_TITLE]]",
+        description: "[[STEP_4_DESCRIPTION]]"
+      }
+    ]
+  },
   contact: {
     title: "Contact",
     intro: "Share your context and current commercial priority.",
