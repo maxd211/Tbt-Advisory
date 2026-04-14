@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className={inter.variable}>
             <head>
                 <Script
                     id="Cookiebot"
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
                     strategy="beforeInteractive"
                 />
             </head>
-            <body className={inter.variable}>
+            <body>
                 {children}
             </body>
         </html>
