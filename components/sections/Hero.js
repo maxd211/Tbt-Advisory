@@ -1,18 +1,21 @@
 export default function Hero() {
     return (
-        <div className="section-band band-hero">
-            <section id="home" className="hero">
-                <div className="hero-content-new">
-                    <div className="hero-left">
-                        <h1 className="hero-headline-new">
-                            Commercial advisory &amp; execution.
-                        </h1>
-                    </div>
-                    <div className="hero-right">
-                        <img src="/profile.png" alt="Professional headshot" className="hero-image" />
-                    </div>
+        <section id="home" className="hero-section">
+            <div className="hero-inner">
+                <p className="hero-eyebrow">TBT Advisory</p>
+                <h1 className="hero-headline">
+                    Commercial advisory<br />
+                    <em>&amp; execution.</em>
+                </h1>
+                <p className="hero-sub">
+                    Boutique advisory for high-growth companies and their investors —
+                    from strategy to revenue at scale.
+                </p>
+                <div className="hero-scroll-hint">
+                    <div className="hero-scroll-line" />
+                    <span>Scroll</span>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }
