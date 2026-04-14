@@ -10,7 +10,7 @@ const csp = [
     // Self-hosted fonts only (after next/font migration)
     "font-src 'self'",
     // Cookiebot telemetry endpoint
-    "connect-src 'self' https://consentcdn.cookiebot.com",
+    "connect-src 'self' https://consent.cookiebot.com https://consentcdn.cookiebot.com",
     "frame-src 'none'",
     "object-src 'none'",
     "base-uri 'self'",
@@ -28,6 +28,7 @@ const nextConfig = {
                     { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
                     { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
                     { key: 'Content-Security-Policy', value: csp },
+                    { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
                 ],
             },
         ];
