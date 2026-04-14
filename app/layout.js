@@ -1,5 +1,13 @@
+import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
+
+const inter = Inter({
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700'],
+    variable: '--font-inter',
+    display: 'swap',
+});
 
 export const metadata = {
     title: 'TBT Advisory | Global Strategy',
@@ -18,8 +26,7 @@ export default function RootLayout({ children }) {
                     strategy="beforeInteractive"
                 />
             </head>
-            <body>
-                <div className="bg-glow"></div>
+            <body className={inter.variable}>
                 {children}
             </body>
         </html>
