@@ -1,42 +1,52 @@
 const SERVICES = [
     {
+        number: '01',
         title: 'Commercial Strategy & GTM Design',
-        description:
-            'Define ICP, positioning, pricing, and GTM model to create a repeatable revenue engine.',
+        desc: 'Define ICP, positioning, pricing, and go-to-market model to create a repeatable revenue engine — built for your specific stage and market.',
+        visualClass: 'service-visual-1',
     },
     {
+        number: '02',
         title: 'Revenue Organization & Scaling',
-        description:
-            'Design sales org, roles, incentives, and playbooks to move beyond founder-led sales.',
+        desc: 'Design the sales org, roles, incentives, and playbooks needed to move beyond founder-led sales and scale with predictability.',
+        visualClass: 'service-visual-2',
     },
     {
+        number: '03',
         title: 'International Expansion (Europe)',
-        description:
-            'Structure market entry and rollout to scale revenue across European markets without fragmentation.',
+        desc: 'Structure market entry and cross-border rollout to scale revenue across European markets — without fragmentation or wasted headcount.',
+        visualClass: 'service-visual-3',
     },
     {
-        title: 'Investor & Board-Level Commercial Advisory',
-        description:
-            'Provide commercial diagnostics, diligence support, and execution plans for investors and boards.',
+        number: '04',
+        title: 'Investor & Board-Level Advisory',
+        desc: 'Provide commercial diagnostics, diligence support, and execution-ready plans for investors and boards navigating growth decisions.',
+        visualClass: 'service-visual-4',
     },
 ];
 
 export default function Services() {
     return (
-        <div className="section-band band-services">
-            <div className="section-inner">
-                <section id="services">
-                    <h2 className="section-title">Services</h2>
-                    <div className="services-list">
-                        {SERVICES.map(({ title, description }) => (
-                            <div key={title} className="service-item">
+        <section id="services" className="services-section">
+            <div className="services-inner">
+                <p className="section-eyebrow">Services</p>
+                <h2 className="section-heading">
+                    Four ways we create commercial value.
+                </h2>
+
+                <div className="services-grid">
+                    {SERVICES.map(({ number, title, desc, visualClass }) => (
+                        <div key={number} className="service-card">
+                            <div className={`service-visual ${visualClass}`} />
+                            <div className="service-content">
+                                <span className="service-number">{number}</span>
                                 <h3 className="service-title">{title}</h3>
-                                <p className="service-desc">{description}</p>
+                                <p className="service-desc">{desc}</p>
                             </div>
-                        ))}
-                    </div>
-                </section>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 }
