@@ -1,21 +1,28 @@
+'use client';
+
+import { useState } from 'react';
 import Header from '../components/Header';
+import GetInTouchModal from '../components/GetInTouchModal';
 import Hero from '../components/sections/Hero';
-import About from '../components/sections/About';
-import Edge from '../components/sections/Edge';
+import TrackRecord from '../components/sections/TrackRecord';
+import AboutFirm from '../components/sections/AboutFirm';
 import Services from '../components/sections/Services';
-import Imprint from '../components/sections/Imprint';
+import Footer from '../components/sections/Footer';
 
 export default function Home() {
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <>
-            <Header />
+            <Header onGetInTouch={() => setModalOpen(true)} />
+            {modalOpen && <GetInTouchModal onClose={() => setModalOpen(false)} />}
             <main>
                 <Hero />
-                <About />
-                <Edge />
+                <TrackRecord />
+                <AboutFirm />
                 <Services />
-                <Imprint />
             </main>
+            <Footer />
         </>
     );
 }
