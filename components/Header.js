@@ -20,14 +20,13 @@ export default function Header({ onGetInTouch }) {
                 {/* Left: Logo */}
                 <Link href="/" className="header-logo" onClick={close}>
                     <span className="header-logo-tbt">TBT</span>
-                    <span className="header-logo-sep">—</span>
                     <span className="header-logo-advisory">Advisory</span>
                 </Link>
 
                 {/* Center: Nav */}
                 <div className="header-nav-wrapper">
                     <ul className="header-nav">
-                        <li><Link href="#track-record">Work</Link></li>
+                        <li><Link href="#home">Home</Link></li>
                         <li><Link href="#about">About</Link></li>
                         <li><Link href="#services">Services</Link></li>
                     </ul>
@@ -52,7 +51,7 @@ export default function Header({ onGetInTouch }) {
             {/* Mobile Nav Overlay */}
             <nav className={`mobile-nav-overlay${menuOpen ? ' active' : ''}`} aria-hidden={!menuOpen}>
                 <button className="mobile-nav-close-btn" onClick={close} aria-label="Close menu">✕</button>
-                <Link href="#track-record" onClick={close}>Work</Link>
+                <Link href="#home" onClick={close}>Home</Link>
                 <Link href="#about" onClick={close}>About</Link>
                 <Link href="#services" onClick={close}>Services</Link>
                 <div className="mobile-get-in-touch">

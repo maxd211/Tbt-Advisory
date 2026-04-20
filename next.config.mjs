@@ -6,7 +6,7 @@ const csp = [
     // Next.js injects inline styles during hydration
     "style-src 'self' 'unsafe-inline'",
     // Profile image is served from same origin; data: for any base64 images
-    "img-src 'self' data:",
+    "img-src 'self' data: https://images.unsplash.com",
     // Self-hosted fonts only (after next/font migration)
     "font-src 'self'",
     // Cookiebot telemetry endpoint

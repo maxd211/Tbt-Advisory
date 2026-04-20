@@ -1,27 +1,23 @@
 const SERVICES = [
     {
         number: '01',
-        title: 'Commercial Strategy & GTM Design',
-        desc: 'Define ICP, positioning, pricing, and go-to-market model to create a repeatable revenue engine — built for your specific stage and market.',
-        visualClass: 'service-visual-1',
+        title: 'Sales Strategy & GTM Design',
+        desc: 'Define your ideal customer profile, build repeatable go-to-market motions, and establish the pricing and channel architecture needed for sustained revenue growth.',
     },
     {
         number: '02',
-        title: 'Revenue Organization & Scaling',
-        desc: 'Design the sales org, roles, incentives, and playbooks needed to move beyond founder-led sales and scale with predictability.',
-        visualClass: 'service-visual-2',
+        title: 'Marketing Steering',
+        desc: 'Develop integrated marketing strategy and steer execution across channels — demand generation, brand positioning, and content that converts at every stage of the funnel.',
     },
     {
         number: '03',
-        title: 'International Expansion (Europe)',
-        desc: 'Structure market entry and cross-border rollout to scale revenue across European markets — without fragmentation or wasted headcount.',
-        visualClass: 'service-visual-3',
+        title: 'Conversion Rate Optimization',
+        desc: 'Diagnose where your funnel leaks and implement systematic improvements across acquisition, activation, and retention to maximise revenue from existing traffic.',
     },
     {
         number: '04',
-        title: 'Investor & Board-Level Advisory',
-        desc: 'Provide commercial diagnostics, diligence support, and execution-ready plans for investors and boards navigating growth decisions.',
-        visualClass: 'service-visual-4',
+        title: 'Investor Advisory',
+        desc: 'Commercial diagnostics, diligence support, and investor-ready narratives for founders and boards navigating fundraising, portfolio decisions, or growth inflection points.',
     },
 ];
 
@@ -29,23 +25,26 @@ export default function Services() {
     return (
         <section id="services" className="services-section">
             <div className="services-inner">
-                <p className="section-eyebrow">Services</p>
-                <h2 className="section-heading">
-                    Four ways we create commercial value.
-                </h2>
 
-                <div className="services-grid">
-                    {SERVICES.map(({ number, title, desc, visualClass }) => (
-                        <div key={number} className="service-card">
-                            <div className={`service-visual ${visualClass}`} />
-                            <div className="service-content">
-                                <span className="service-number">{number}</span>
-                                <h3 className="service-title">{title}</h3>
-                                <p className="service-desc">{desc}</p>
-                            </div>
+                {/* Section header */}
+                <div className="services-header">
+                    <p className="section-eyebrow">Services</p>
+                    <h2 className="section-heading" style={{ marginBottom: 0 }}>
+                        The disciplines behind value creation.
+                    </h2>
+                </div>
+
+                {/* Service rows */}
+                <div className="services-list">
+                    {SERVICES.map(({ number, title, desc }) => (
+                        <div key={number} className="service-row">
+                            <span className="service-row-number">{number}</span>
+                            <h3 className="service-row-title">{title}</h3>
+                            <p className="service-row-desc">{desc}</p>
                         </div>
                     ))}
                 </div>
+
             </div>
         </section>
     );

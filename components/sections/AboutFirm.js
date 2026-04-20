@@ -1,9 +1,17 @@
 const DETAILS = [
+    { label: 'Founder', value: 'Thanh Binh Tran' },
     { label: 'Founded', value: '2024, Bonn · Germany' },
     { label: 'Legal entity', value: 'TBT Consulting GmbH' },
     { label: 'Operating as', value: 'TBT Advisory' },
-    { label: 'Focus', value: 'Europe — with global reach across VC and PE networks' },
+    { label: 'Focus', value: 'Europe, with global reach across VC and PE networks' },
     { label: 'Contact', value: 'tb@tbt-advisory.com' },
+];
+
+const STATS = [
+    { number: '€1B+', label: 'Assets under management' },
+    { number: '100+', label: 'Portfolio companies scaled' },
+    { number: '20+', label: 'Commercial strategies from zero' },
+    { number: '€250M+', label: 'Peak revenue built' },
 ];
 
 export default function AboutFirm() {
@@ -17,21 +25,16 @@ export default function AboutFirm() {
                         Where venture-backed insight meets operating discipline.
                     </h2>
                     <div className="about-body">
+                        <p className="about-label">About our founder</p>
                         <p>
-                            <strong>TBT Advisory</strong> is a boutique commercial advisory firm founded by Thanh Binh Tran.
-                            It stems from a simple observation: most high-growth companies know what they want to build —
-                            but lack the commercial architecture to scale it reliably.
+                            Former Chief Commercial Officer at Project A, the VC and PE fund behind Trade Republic,
+                            sennder, Quantum Systems, voi, Spryker and 100+ other portfolio companies. Helped the
+                            portfolio build their commercial strategies from zero to €250M revenue.
                         </p>
                         <p>
-                            Thanh Binh spent years at the intersection of venture capital and operating reality,
-                            sitting on both sides of the table — as a founder navigating early-stage uncertainty,
-                            as an operator scaling revenue from zero, and as a CCO at Project A advising 100+ portfolio
-                            companies through the hardest commercial inflection points.
-                        </p>
-                        <p>
-                            TBT Advisory distils that experience into a single focused offering: the kind of
-                            senior commercial thinking that founders and investors need, without the overhead of a
-                            large consulting firm.
+                            Prior to that: venture capital backed founder of a music SaaS with clients and investors
+                            like the label of Jay-Z, Lena Meyer-Landrut, Bausa, CRO, Seedcamp and Head of Business
+                            Development at a Series B platform backed by BMW and Cherry Ventures.
                         </p>
                     </div>
                 </div>
@@ -45,6 +48,16 @@ export default function AboutFirm() {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            {/* Stats bar at bottom of about section */}
+            <div className="about-stats">
+                {STATS.map(({ number, label }) => (
+                    <div key={number} className="about-stat">
+                        <span className="about-stat-number">{number}</span>
+                        <span className="about-stat-label">{label}</span>
+                    </div>
+                ))}
             </div>
         </section>
     );
