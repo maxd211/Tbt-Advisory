@@ -7,7 +7,7 @@ const SERVICES = [
     {
         number: '02',
         title: 'Marketing Steering',
-        desc: 'Develop integrated marketing strategy and steer execution across channels — demand generation, brand positioning, and content that converts at every stage of the funnel.',
+        desc: 'Develop integrated marketing strategies and steer execution across channels: demand generation, brand positioning, and content that converts at every stage of the funnel.',
     },
     {
         number: '03',
