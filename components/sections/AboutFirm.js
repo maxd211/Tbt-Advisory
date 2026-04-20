@@ -7,13 +7,6 @@ const DETAILS = [
     { label: 'Contact', value: 'tb@tbt-advisory.com' },
 ];
 
-const STATS = [
-    { number: '€1B+', label: 'Assets under management' },
-    { number: '100+', label: 'Portfolio companies scaled' },
-    { number: '20+', label: 'Commercial strategies from zero' },
-    { number: '€250M+', label: 'Peak revenue built' },
-];
-
 export default function AboutFirm() {
     return (
         <section id="about" className="about-section">
@@ -48,16 +41,6 @@ export default function AboutFirm() {
                         </div>
                     ))}
                 </div>
-            </div>
-
-            {/* Stats bar at bottom of about section */}
-            <div className="about-stats">
-                {STATS.map(({ number, label }) => (
-                    <div key={number} className="about-stat">
-                        <span className="about-stat-number">{number}</span>
-                        <span className="about-stat-label">{label}</span>
-                    </div>
-                ))}
             </div>
         </section>
     );

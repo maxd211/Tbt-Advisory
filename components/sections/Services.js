@@ -30,7 +30,7 @@ export default function Services() {
                 <div className="services-header">
                     <p className="section-eyebrow">Services</p>
                     <h2 className="section-heading" style={{ marginBottom: 0 }}>
-                        The disciplines behind value creation.
+                        Our disciplines behind value creation.
                     </h2>
                 </div>
 
