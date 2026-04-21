@@ -39,7 +39,7 @@ export default function GetInTouchModal({ onClose }) {
                 <p className="modal-eyebrow">Contact</p>
                 <h2 className="modal-title">Let&apos;s talk.</h2>
                 <p className="modal-subtitle">
-                    Leave a message and we&apos;ll follow up, or book a call directly.
+                    Leave a message and we&apos;ll follow up.
                 </p>
 
                 <form className="modal-form" onSubmit={handleSend}>
@@ -78,15 +78,6 @@ export default function GetInTouchModal({ onClose }) {
 
                     <div className="modal-actions">
                         <button type="submit" className="btn-send">Send message</button>
-                        <div className="modal-divider">or</div>
-                        <a
-                            href={CALENDLY_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-book-call"
-                        >
-                            Book a call
-                        </a>
                     </div>
                 </form>
             </div>
